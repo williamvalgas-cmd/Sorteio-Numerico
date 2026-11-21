@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,24 @@
     <header>
         <img src="./img/die.gif" alt="dado-de-6-lados"> 
 
-        <h1>
-            DevSorteio
-        </h1>
+        <h1>DevSorteio</h1>
     </header>
 
     <main>
-        <h2>  Sortear um número  </h2>
-        <section>
-            <input id="input-min" placeholder="entre" type="number">
-            <input id="input-max" placeholder="e" type="number">
-        </section>
-        <button>Sortear</button>
+        <h2>Sortear um número</h2>
 
+        <section>
+            <input id="input-min" placeholder="menor valor" type="number">
+            <input id="input-max" placeholder="maior valor" type="number">
+        </section>
+
+        <div id="card" class="card">
+            <span id="result">?</span>
+        </div>
+ 
+        <button onclick="validationValues()">Sortear</button>
     </main>
     
 </body>
+<script src="script.js"></script>
 </html>
